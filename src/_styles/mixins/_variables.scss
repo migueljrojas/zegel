@@ -10,13 +10,13 @@ $blue: #053f7a;
 $blueGray: #bbc9c9;
 
 $mainColor: $blue;
-$link: $blue;
-$linkHover: $blue + #333;
+$link: $mainColor;
+$linkHover: $mainColor + #333;
 $text: $white;
 $textDark: $black;
-$accent: $blue;
+$accent: $mainColor;
 $bg: $white;
-$bgSecondary: $blue;
+$bgSecondary: $mainColor;
 $bgDark: $black;
 
 $base: 40px;
