@@ -9,43 +9,93 @@
     text-align: #{$align};
 }
 
-@mixin padd($mode: both) {
-    @if $mode == both {
+@mixin padd($mode: both, $size: full) {
+    @if $size == full {
 
-        padding: 16% 0;
+        @if $mode == both {
 
-        @include mq(sm){
-            padding: 12% 0;
+            padding-top: 16%;
+            padding-bottom: 16%;
+
+            @include mq(sm){
+                padding-top: 12%;
+                padding-bottom: 12%;
+            }
+
+            @include mq(md){
+                padding-top: 8%;
+                padding-bottom: 8%;
+            }
         }
 
-        @include mq(md){
-            padding: 8% 0;
+        @if $mode == top {
+
+            padding-top: 16%;
+
+            @include mq(sm){
+                padding-top: 12%;
+            }
+
+            @include mq(md){
+                padding-top: 8%;
+            }
+        }
+
+        @if $mode == bottom {
+
+            padding-bottom: 16%;
+
+            @include mq(sm){
+                padding-bottom: 12%;
+            }
+
+            @include mq(md){
+                padding-bottom: 8%;
+            }
         }
     }
 
-    @if $mode == top {
+    @if $size == half {
+        @if $mode == both {
 
-        padding: 16% 0 0;
+            padding-top: 8%;
+            padding-bottom: 8%;
 
-        @include mq(sm){
-            padding: 12% 0 0;
+            @include mq(sm){
+                padding-top: 6%;
+                padding-bottom: 6%;
+            }
+
+            @include mq(md){
+                padding-top: 4%;
+                padding-bottom: 4%;
+            }
         }
 
-        @include mq(md){
-            padding: 8% 0 0;
+        @if $mode == top {
+
+            padding-top: 8%;
+
+            @include mq(sm){
+                padding-top: 6%;
+            }
+
+            @include mq(md){
+                padding-top: 4%;
+            }
         }
-    }
 
-    @if $mode == bottom {
+        @if $mode == bottom {
 
-        padding: 0 0 16%;
+            padding-bottom: 8%;
 
-        @include mq(sm){
-            padding: 0 0 12%;
-        }
+            @include mq(sm){
+                padding-bottom: 6%;
+            }
 
-        @include mq(md){
-            padding: 0 0 8%;
+            @include mq(md){
+                padding-bottom: 4%;
+            }
         }
     }
 }
