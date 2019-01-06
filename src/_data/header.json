@@ -1,6 +1,18 @@
 [
     {
-        "name":"",
-        "url":""
+        "name":"participa",
+        "url":"#form"
+    },
+    {
+        "name":"cómo participar",
+        "url":"#participar"
+    },
+    {
+        "name":"vota",
+        "url":"#historias"
+    },
+    {
+        "name":"premios",
+        "url":"#premios"
     }
 ]

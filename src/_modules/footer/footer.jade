@@ -1,1 +1,23 @@
 footer.footer
+    .container
+        .row
+            .col-xs-24
+                .footer__wrapper
+                    .footer__logo
+                        img(src="/images/logo-footer.png")
+                    ul.footer__social
+                        li
+                            a
+                                i.fa.fa-facebook
+                        li
+                            a
+                                i.fa.fa-instagram
+                        li
+                            a
+                                i.fa.fa-youtube-play
+            .col-xs-24
+                .footer__container
+                    ul
+                        each item in site.data.footer
+                            li
+                                button=item.name

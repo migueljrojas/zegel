@@ -1,3 +1,111 @@
 .footer {
-    
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid $lightGray;
+        justify-content: center;
+        flex-direction: column;
+        padding: 40px;
+
+        @include mq(sm) {
+            padding: 2vw 0;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+    }
+
+    &__logo {
+        height: 60px;
+        margin-bottom: 40px;
+
+        @include mq(sm) {
+            margin-bottom: 0;
+            height: 5vw;
+        }
+
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    &__social {
+        display: flex;
+
+        li {
+            background: $red;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 10px;
+            width: 40px;
+            height: 40px;
+
+            @include mq(sm) {
+                margin: 0 0 0 1vw;
+                width: 3vw;
+                height: 3vw;
+            }
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        i {
+            color: $white;
+            font-size: 20px;
+
+            @include mq(sm) {
+                font-size: 1.6vw;
+            }
+        }
+    }
+
+    &__container {
+        padding: 40px;
+
+        @include mq(sm) {
+            padding: 2vw 0;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            @include mq(sm) {
+                flex-direction: row;
+            }
+        }
+
+        li {
+            width: 100%;
+
+            @include mq(sm) {
+                width: 20%;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+
+                @include mq(sm) {
+                    margin-bottom: 0;
+                    border-right: 1px solid $lightGray;
+                }
+            }
+        }
+
+        button {
+            background: transparent;
+            border: none;
+            color: $black;
+            width: 100%;
+            font-weight: 500;
+
+        }
+    }
 }

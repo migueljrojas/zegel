@@ -1,2 +1,26 @@
 header.header
-    
+    .container
+        .row
+            .col-xs-24
+                .header__wrapper
+                    .header__logo
+                        img(src="/images/logo.png")
+                    .header__nav
+                        ul.header__links
+                            each  item in site.data.header
+                                li
+                                    a(href=item.url)=item.name
+                        ul.header__social
+                            li
+                                a(href="#")
+                                    i.fa.fa-facebook
+                            li
+                                a(href="#")
+                                    i.fa.fa-instagram
+                            li
+                                a(href="#")
+                                    i.fa.fa-twitter
+                    .header__hamburguer
+                        span
+                        span
+                        span
