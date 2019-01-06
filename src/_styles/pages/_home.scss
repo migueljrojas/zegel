@@ -270,6 +270,8 @@
         }
 
         &__input {
+            @include trans;
+
             border: none;
             height: 40px;
             padding: 1vw;
@@ -285,6 +287,10 @@
             &--textarea {
                 height: 30vh;
             }
+
+            &:focus {
+                transform: scale3d(1.05, 1.05, 1.05);
+            }
         }
 
         &__buttons-wrapper {
@@ -294,6 +300,8 @@
         }
 
         &__button {
+            @include trans;
+            
             border-radius: 5px;
             border: none;
             display: flex;
@@ -309,6 +317,10 @@
                 padding: 1vw 0;
                 width: 9vw;
                 height: 6vw;
+            }
+
+            &:focus {
+                transform: scale3d(1.05, 1.05, 1.05);
             }
         }
 
@@ -614,7 +626,7 @@
         padding: 40px;
         margin-bottom: -80px;
         margin-top: -5px;
-        
+
         @include mq(ms) {
             margin-top: -3px;
             margin-bottom: -11vw;
