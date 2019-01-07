@@ -4,8 +4,8 @@ block content
     main.home
         section.home__hero
             .home__hero__row
-                .home__hero__title.wow.fadeInLeftBig
-                    img(src="/images/hero-title.png")
+                .home__hero__title
+                    img.wow.fadeInLeftBig(src="/images/hero-title.png")
                 .home__hero__wrapper.wow.fadeInLeftBig(data-wow-delay=".3s")
                     p.home__hero__text
                         |cuéntanos las expectativas sobre tu futuro profesional y participa por una beca. invita a tus amigos a darle like y junta más votos.
@@ -73,14 +73,17 @@ block content
                 .home__form__col.wow.fadeInRight(data-content="form-2")
                     .home__form__container
                         .home__form__wrapper
+                            label.home__form__label Título de tu Historia
+                            input.home__form__input(type="text" id="titulo")
+                        .home__form__wrapper
                             label.home__form__label tu historia
                             textarea.home__form__input.home__form__input--textarea(id="historia" placeholder="Escribe aquí tu historia")
                         .home__form__wrapper
                             label.home__form__label ¿por qué es un desafío para ti?
-                            input.home__form__input(type="text" id="name")
+                            input.home__form__input(type="text" id="desafio")
                         .home__form__wrapper
                             label.home__form__label ¿Por qué es tu sueño?
-                            input.home__form__input(type="text" id="name")
+                            input.home__form__input(type="text" id="sueno")
                         button.home__form__submit-button(data-target="form-3") finalizar
                             i.fa.fa-long-arrow-right
                 .home__form__col
