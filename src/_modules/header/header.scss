@@ -2,25 +2,23 @@
     $h: &;
     position: fixed;
     width: 100%;
-    padding: 1vh 0;
-    // overflow: hidden;
+    padding: 10px 0;
     z-index: 1000;
     background: $white;
-
+    top: 0;
 
     @include mq(sm) {
-        position: static;
-        padding: 2vw 0;
+        padding: 20px 0;
     }
 
     &__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 8vh;
+        height: 30px;
 
         @include mq(sm) {
-            height: 5vh;
+            height: 50px;
         }
     }
 
@@ -38,7 +36,7 @@
 
         position: fixed;
         width: 100vw;
-        top: 10vh;
+        top: 50px;
         transform: translateX(-100%);
         left: 0;
         right: 0;
@@ -77,7 +75,7 @@
         }
     }
 
-    &__links {
+    &__menu {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -120,6 +118,7 @@
             }
         }
     }
+
     &__hamburguer {
         cursor: pointer;
         width: 25px;
@@ -127,7 +126,6 @@
         // margin: auto;
         // position: absolute;
         // right: 32px;
-        // top: 30px;
 
         @include mq(sm) {
             display: none;
@@ -172,7 +170,6 @@
 
         #{$h}__nav {
             transform: translateX(0);
-            left: 0;
         }
     }
 }

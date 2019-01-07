@@ -1,22 +1,22 @@
 [
     {
         "name":"Libros de Reclamación",
-        "url":"#"
+        "url":"http://smart.zegelipae.edu.pe/registroreclamacion.aspx"
     },
     {
         "name":"Términos y Condiciones",
-        "url":"#"
+        "url":"https://www.zegelipae.edu.pe/T%C3%A9rminos_y_condiciones.html"
     },
     {
         "name":"Políticas de Privacidad",
-        "url":"#"
+        "url":"https://www.zegelipae.edu.pe/src/pdf/src_pdf_politicas-de-privacidad.pdf"
     },
     {
         "name":"Políticas de Calidad",
-        "url":"#"
+        "url":"https://www.zegelipae.edu.pe/politicas_de_calidad.html"
     },
     {
         "name":"Portal de Transparencia",
-        "url":"#"
+        "url":"https://www.zegelipae.edu.pe/portal_de_transparencia.html"
     }
 ]

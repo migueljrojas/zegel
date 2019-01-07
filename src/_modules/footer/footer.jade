@@ -20,4 +20,4 @@ footer.footer
                     ul
                         each item in site.data.footer
                             li
-                                button=item.name
+                                a(href=item.url, target="_blank")=item.name

@@ -5,20 +5,20 @@ header.header
                 .header__wrapper
                     .header__logo
                         img(src="/images/logo.png")
-                    .header__nav
-                        ul.header__links
+                    nav.header__nav
+                        ul.header__menu
                             each  item in site.data.header
                                 li
                                     a(href=item.url)=item.name
                         ul.header__social
                             li
-                                a(href="#")
+                                a(href="https://www.facebook.com/zegelipae", target="_blank")
                                     i.fa.fa-facebook
                             li
-                                a(href="#")
+                                a(href="https://www.instagram.com/zegelipae/", target="_blank")
                                     i.fa.fa-instagram
                             li
-                                a(href="#")
+                                a(href="https://twitter.com/zegelipae?lang=es", target="_blank")
                                     i.fa.fa-twitter
                     .header__hamburguer
                         span

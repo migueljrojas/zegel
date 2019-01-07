@@ -4,30 +4,30 @@ block content
     main.home
         section.home__hero
             .home__hero__row
-                .home__hero__title
+                .home__hero__title.wow.fadeInLeftBig
                     img(src="/images/hero-title.png")
-                .home__hero__wrapper
+                .home__hero__wrapper.wow.fadeInLeftBig(data-wow-delay=".3s")
                     p.home__hero__text
                         |cuéntanos las expectativas sobre tu futuro profesional y participa por una beca. invita a tus amigos a darle like y junta más votos.
                         br
                         span la historia con más likes será la ganadora.
-            .home__hero__row.home__hero__row--bottom
+            .home__hero__row.home__hero__row--bottom.wow.fadeInUpBig
                 p.home__hero__comment ¡tu futuro profesional puede ser una gran historia!
-            .home__hero__image
+            .home__hero__image.wow.fadeInRight
                 img(src="/images/girl.png")
-        section.home__form#form
-            .home__title.home__title--form
+        section#form.home__form
+            .home__title.home__title--form.wow.fadeInUpBig
                 img(src="/images/form-title.png")
             .home__form__col-wrapper
-                .home__form__col(data-content="form-1")
+                .home__form__col.wow.fadeInLeft(data-content="form-1")
                     .home__form__content
                         .home__form__index 1
                         p.home__form__instructions deja tu nombre, apellido y mail y sube tu foto, ¡puedes subir hasta 3!
-                .home__form__col(data-content="form-2")
+                .home__form__col.wow.fadeInLeft(data-content="form-2")
                     .home__form__content
                         .home__form__index 2
                         p.home__form__instructions ¡por qué quisieras estudias esa carrera y cúales son tus expectativas profesionales a futuro?
-                .home__form__col(data-content="form-3")
+                .home__form__col.wow.fadeInLeft(data-content="form-3")
                     .home__form__content
                         .home__form__index 3
                         p.home__form__instructions 
@@ -36,7 +36,7 @@ block content
                             br
                             |te notificaremos a tu email cuando subamos la historia en la web.
                             |¡éxitos!
-                .home__form__col.-active(data-content="form-1")
+                .home__form__col.wow.fadeInRight.-active(data-content="form-1")
                     .home__form__container
                         .home__form__wrapper
                             label.home__form__label nombre
@@ -53,21 +53,24 @@ block content
                         .home__form__wrapper
                             label.home__form__label tus fotos
                             .home__form__buttons-wrapper
-                                button.home__form__button
+                                input.home__form__file(type="file" id="file1")
+                                label.home__form__button(for="file1")
                                     .home__form__image
                                         img(src="/images/icon-picture.png")
                                     .home__form__text subir
-                                button.home__form__button
+                                input.home__form__file(type="file" id="file2")
+                                label.home__form__button(for="file2")
                                     .home__form__image
                                         img(src="/images/icon-picture.png")
                                     .home__form__text subir
-                                button.home__form__button
+                                input.home__form__file(type="file" id="file3")
+                                label.home__form__button(for="file3")
                                     .home__form__image
                                         img(src="/images/icon-picture.png")
                                     .home__form__text subir
                         button.home__form__submit-button(data-target="form-2") continuar
                             i.fa.fa-long-arrow-right
-                .home__form__col(data-content="form-2")
+                .home__form__col.wow.fadeInRight(data-content="form-2")
                     .home__form__container
                         .home__form__wrapper
                             label.home__form__label tu historia
@@ -84,16 +87,16 @@ block content
             .home__form__dots
                 ul
                     li
-                        i.fa.fa-circle.-active(data-content="form-1" data-target="form-1")
+                        i.fa.fa-circle.-active(data-content="form-1")
                     li
-                        i.fa.fa-circle(data-content="form-2" data-target="form-2")
+                        i.fa.fa-circle(data-content="form-2")
                     li
-                        i.fa.fa-circle(data-content="form-3" data-target="form-3")
-        section.home__participar#participar
-            .home__title.home__title--participar
+                        i.fa.fa-circle(data-content="form-3")
+        section#como-participar.home__participar
+            .home__title.home__title--participar.wow.fadeInUpBig
                 img(src="/images/participar-title.png")
             .home__participar__row
-                .home__participar__col
+                .home__participar__col.wow.fadeInUpBig
                     .home__participar__icon
                         img(src="/images/icon-picture.png")
                     .home__participar__text
@@ -101,7 +104,7 @@ block content
                         |sube tu foto
                         br
                         |(hasta 3)
-                .home__participar__col
+                .home__participar__col.wow.fadeInUpBig(data-wow-delay=".2s")
                     .home__participar__icon
                         img(src="/images/icon-portfolio.png")
                     .home__participar__text
@@ -111,7 +114,7 @@ block content
                         |expectativas para tu
                         br
                         |futuro profesional
-                .home__participar__col
+                .home__participar__col.wow.fadeInUpBig(data-wow-delay=".4s")
                     .home__participar__icon
                         img(src="/images/icon-heart.png")
                     .home__participar__text
@@ -121,11 +124,12 @@ block content
                         |votada en nuestra web
                         br
                         |será la ganadora
-        section.home__historias#historias
-            .home__title.home__title--historias
+        section#historias.home__historias
+            .home__title.home__title--historias.wow.fadeInUpBig
                 img(src="/images/conoce-title.png")
-            .home__historias__wrapper
-                .home__historias__container
+                
+            .home__historias__wrapper                
+                .home__historias__container.wow.fadeInLeftBig
                     .home__historias__image
                         img(src="/images/person1.jpg")
                     .home__historias__content
@@ -133,7 +137,8 @@ block content
                         .home__historias__likes
                             span.home__historias__counter 2
                             i.fa.fa-heart
-                .home__historias__container
+                
+                .home__historias__container.wow.fadeInLeftBig(data-wow-delay=".2s")
                     .home__historias__image
                         img(src="/images/person2.jpg")
                     .home__historias__content
@@ -141,7 +146,8 @@ block content
                         .home__historias__likes
                             span.home__historias__counter 2
                             i.fa.fa-heart
-                .home__historias__container
+                
+                .home__historias__container.wow.fadeInLeftBig(data-wow-delay=".4s")
                     .home__historias__image
                         img(src="/images/person3.jpg")
                     .home__historias__content
@@ -149,7 +155,8 @@ block content
                         .home__historias__likes
                             span.home__historias__counter 102
                             i.fa.fa-heart
-                .home__historias__container
+                
+                .home__historias__container.wow.fadeInLeftBig(data-wow-delay=".6s")
                     .home__historias__image
                         img(src="/images/person4.jpg")
                     .home__historias__content
@@ -157,7 +164,8 @@ block content
                         .home__historias__likes
                             span.home__historias__counter 2
                             i.fa.fa-heart
-                .home__historias__container
+                
+                .home__historias__container.wow.fadeInLeftBig.-hidden-xs
                     .home__historias__image
                         img(src="/images/person1.jpg")
                     .home__historias__content
@@ -165,7 +173,8 @@ block content
                         .home__historias__likes
                             span.home__historias__counter 2
                             i.fa.fa-heart
-                .home__historias__container
+                
+                .home__historias__container.wow.fadeInLeftBig.-hidden-xs(data-wow-delay=".2s")
                     .home__historias__image
                         img(src="/images/person2.jpg")
                     .home__historias__content
@@ -173,7 +182,8 @@ block content
                         .home__historias__likes
                             span.home__historias__counter 2
                             i.fa.fa-heart
-                .home__historias__container
+                
+                .home__historias__container.wow.fadeInLeftBig.-hidden-xs(data-wow-delay=".4s")
                     .home__historias__image
                         img(src="/images/person3.jpg")
                     .home__historias__content
@@ -181,7 +191,8 @@ block content
                         .home__historias__likes
                             span.home__historias__counter 102
                             i.fa.fa-heart
-                .home__historias__container
+                
+                .home__historias__container.wow.fadeInLeftBig.-hidden-xs(data-wow-delay=".6s")
                     .home__historias__image
                         img(src="/images/person4.jpg")
                     .home__historias__content
@@ -189,7 +200,8 @@ block content
                         .home__historias__likes
                             span.home__historias__counter 2
                             i.fa.fa-heart
-                .home__historias__container
+                
+                .home__historias__container.wow.fadeInLeftBig.-hidden-xs
                     .home__historias__image
                         img(src="/images/person1.jpg")
                     .home__historias__content
@@ -197,7 +209,8 @@ block content
                         .home__historias__likes
                             span.home__historias__counter 2
                             i.fa.fa-heart
-                .home__historias__container
+                
+                .home__historias__container.wow.fadeInLeftBig.-hidden-xs(data-wow-delay=".2s")
                     .home__historias__image
                         img(src="/images/person2.jpg")
                     .home__historias__content
@@ -205,7 +218,8 @@ block content
                         .home__historias__likes
                             span.home__historias__counter 2
                             i.fa.fa-heart
-                .home__historias__container
+                
+                .home__historias__container.wow.fadeInLeftBig.-hidden-xs(data-wow-delay=".4s")
                     .home__historias__image
                         img(src="/images/person3.jpg")
                     .home__historias__content
@@ -213,7 +227,8 @@ block content
                         .home__historias__likes
                             span.home__historias__counter 102
                             i.fa.fa-heart
-                .home__historias__container
+                
+                .home__historias__container.wow.fadeInLeftBig.-hidden-xs(data-wow-delay=".6s")
                     .home__historias__image
                         img(src="/images/person4.jpg")
                     .home__historias__content
@@ -221,15 +236,17 @@ block content
                         .home__historias__likes
                             span.home__historias__counter 2
                             i.fa.fa-heart
+            
             button.home__historias__more-button ver más
-        section.home__premios#premios
+        
+        section#premios.home__premios
             .home__title.home__title--premios
                 img(src="/images/premios-title.png")
             .home__premios__wrapper
-                .home__premios__col
+                .home__premios__col.wow.fadeInLeft
                     .home__premios__number 3
                     p.home__premios__text becas primer ciclo
-                .home__premios__col
+                .home__premios__col.wow.fadeInRight
                     .home__premios__number 10
                     p.home__premios__text media becas primer ciclo
             .home__premios__conditions

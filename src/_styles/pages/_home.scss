@@ -1,9 +1,9 @@
 .home {
     overflow: hidden;
-    padding-top: calc(8vh + 20px);
+    padding-top: 50px;
 
     @include mq(sm) {
-        padding-top: 0;
+        padding-top: 90px;
     }
 
     &__hero {
@@ -276,7 +276,7 @@
             height: 40px;
             padding: 1vw;
 
-            @include mq(ms) {
+            @include mq(sm) {
                 height: 4vh;
             }
 
@@ -289,7 +289,9 @@
             }
 
             &:focus {
-                transform: scale3d(1.05, 1.05, 1.05);
+                outline: none;
+                transform: scale3d(1.05, 1.05, 1);
+                box-shadow: 0 0 10px rgba(0,0,0,.3);
             }
         }
 
@@ -312,6 +314,7 @@
             width: 100px;
             height: 70px;
             padding: 10px;
+            cursor: pointer;
 
             @include mq(sm) {
                 padding: 1vw 0;
@@ -337,6 +340,11 @@
                 width: 100%;
                 height: auto;
             }
+        }
+
+        &__file {
+            position: absolute;
+            left: -9999px;
         }
 
         &__text {
@@ -509,19 +517,13 @@
             background: transparent;
             border-radius: 10px;
             margin-bottom: 20px;
+            cursor: pointer;
 
             @include mq(sm) {
                 margin-bottom: 2vw;
             }
 
-            &:nth-child(5),
-            &:nth-child(6),
-            &:nth-child(7),
-            &:nth-child(8),
-            &:nth-child(9),
-            &:nth-child(10),
-            &:nth-child(11),
-            &:nth-child(12) {
+            &.-hidden-xs {
                 display: none;
 
                 @include mq(sm) {
@@ -627,7 +629,7 @@
         margin-bottom: -80px;
         margin-top: -5px;
 
-        @include mq(ms) {
+        @include mq(sm) {
             margin-top: -3px;
             margin-bottom: -11vw;
             padding: 4vw 0 6vw 0;
