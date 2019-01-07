@@ -23,11 +23,11 @@ block content
                     .home__form__content
                         .home__form__index 1
                         p.home__form__instructions deja tu nombre, apellido y mail y sube tu foto, ¡puedes subir hasta 3!
-                .home__form__col.wow.fadeInLeft(data-content="form-2")
+                .home__form__col(data-content="form-2")
                     .home__form__content
                         .home__form__index 2
                         p.home__form__instructions ¡por qué quisieras estudias esa carrera y cúales son tus expectativas profesionales a futuro?
-                .home__form__col.wow.fadeInLeft(data-content="form-3")
+                .home__form__col(data-content="form-3")
                     .home__form__content
                         .home__form__index 3
                         p.home__form__instructions 
@@ -36,6 +36,14 @@ block content
                             br
                             |te notificaremos a tu email cuando subamos la historia en la web.
                             |¡éxitos!
+                        br
+                        p.home__form__instructions  COMPARTE TU HISTORIA PARA LOGRAR MÁS VOTOS
+                            br
+                            br
+                            a(href="#")
+                                i.fa.fa-facebook
+                            a(href="#")
+                                i.fa.fa-twitter
                 .home__form__col.wow.fadeInRight.-active(data-content="form-1")
                     .home__form__container
                         .home__form__wrapper
@@ -70,7 +78,7 @@ block content
                                     .home__form__text subir
                         button.home__form__submit-button(data-target="form-2") continuar
                             i.fa.fa-long-arrow-right
-                .home__form__col.wow.fadeInRight(data-content="form-2")
+                .home__form__col(data-content="form-2")
                     .home__form__container
                         .home__form__wrapper
                             label.home__form__label Título de tu Historia

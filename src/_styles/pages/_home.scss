@@ -226,6 +226,14 @@
             @include mq(sm) {
                 font-size: 10vw;
             }
+
+            a {
+                color: $white;
+                
+                &:first-of-type {
+                    margin-right: 20px;
+                }
+            }
         }
 
         &__instructions {
