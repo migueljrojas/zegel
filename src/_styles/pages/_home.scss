@@ -26,6 +26,8 @@
             &--bottom {
                 background: $black;
                 padding: 40px 0;
+                z-index: 5;
+                position: relative;
 
                 @include mq(sm) {
                     padding: 3vw 0;
@@ -67,7 +69,7 @@
             font-weight: 900;
             text-transform: uppercase;
             font-size: 14px;
-            width: 78%;
+            width: 75%;
 
             @include mq(sm) {
                 width: auto;
@@ -80,6 +82,7 @@
         }
 
         &__comment {
+            position: relative;
             background: $red;
             width: auto;
             margin-bottom: 0;
@@ -103,13 +106,11 @@
             position: absolute;
             right: -30%;
             width: 100%;
-            top: 90px;
-
+            bottom: -120px;
             @include mq(sm) {
-                top: 3.5vh;
+                bottom: -9vw;
                 width: 25vw;
                 right: 20vw;
-
             }
 
             img {
@@ -229,7 +230,7 @@
 
             a {
                 color: $white;
-                
+
                 &:first-of-type {
                     margin-right: 20px;
                 }
@@ -311,7 +312,7 @@
 
         &__button {
             @include trans;
-            
+
             border-radius: 5px;
             border: none;
             display: flex;
@@ -715,6 +716,176 @@
                     font-size: .8vw;
 
                 }
+            }
+        }
+    }
+
+    &__eg-modal {
+
+        &__wrapper {
+            padding: 20px 0 0 0;
+            width: 100vw;
+            height: 80vh;
+            position: relative;
+
+            @include mq(sm) {
+                padding: 4vw 0;
+                height: auto;
+                width: auto;
+            }
+
+            &--terminos {
+                overflow: hidden;
+                padding: 3vh 0;
+
+                @include mq(sm) {
+                    width: 70%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    overflow: visible;
+                }
+            }
+
+            &#terminos {
+                display: none;
+            }
+
+            .flexrow {
+                overflow: scroll;
+                height: 65vh;
+
+                @include mq(sm) {
+                    height: auto;
+                    overflow: visible;
+                }
+            }
+        }
+
+        &__group {
+
+            &--image {
+                display: block;
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+
+                @include mq(sm) {
+                    width: 70%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+
+            &--left {
+                order: 2;
+                height: 10vh;
+
+                @include mq(sm) {
+                    order: 1;
+                    height: auto;
+                }
+            }
+
+            &--right {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+
+                order: 1;
+
+                @include mq(sm) {
+                    order: 2;
+                }
+            }
+        }
+
+        &__image {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+            width: 100%;
+            height: 90vw;
+
+            @include mq(sm) {
+                width: 100%;
+                height: 0;
+                padding-bottom: 100%;
+                margin-bottom: 1vw;
+            }
+
+            img {
+                width: auto;
+                height: 100%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate3d(-50%, -50%, 0);
+            }
+        }
+
+        &__name {
+            margin-top: 0;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 20px;
+
+            @include mq(sm) {
+                margin-bottom: 2vw;
+                font-size: 2vw;
+            }
+        }
+
+        &__text {
+            margin-bottom: 20px;
+            font-size: 18px;
+
+            @include mq(sm) {
+                font-size: 1.5vw;
+                width: 70%;
+                margin-bottom: 2vw;
+            }
+        }
+
+        &__counter {
+            text-align: center;
+
+            i {
+                color: $red;
+                margin-left: 1vw;
+            }
+        }
+
+        &__vote-button {
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include mq(sm) {
+                align-items: flex-start;
+                justify-content: flex-start;
+                height: auto;
+            }
+
+            button {
+                background: $red;
+                border: none;
+                padding: 1vw 3vw;
+                color: $white;
+                text-transform: uppercase;
+                font-weight: 700;
+
+            }
+        }
+
+        &__content {
+            overflow: scroll;
+            height: 74vh;
+
+            @include mq(sm) {
+                height: auto;
             }
         }
     }

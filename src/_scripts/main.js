@@ -8,6 +8,8 @@ global._ = require('underscore');
 var Header = require('../_modules/header/header');
 var Slider = require('../_modules/slider/slider');
 var DataSwitcher = require('../_modules/data-switcher/data-switcher');
+var EgModal = require('../_modules/eg-modal/eg-modal');
+
 
 $(function() {
     require('../../bower_components/bootstrap-sass/assets/javascripts/bootstrap.min');
@@ -16,4 +18,5 @@ $(function() {
     new Header();
     new Slider();
     new DataSwitcher();
+    new EgModal();
 });

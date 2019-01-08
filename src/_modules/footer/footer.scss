@@ -84,6 +84,7 @@
 
         li {
             width: 100%;
+            text-align: center;
 
             @include mq(sm) {
                 width: 20%;
@@ -99,13 +100,10 @@
             }
         }
 
-        button {
-            background: transparent;
-            border: none;
+        a {
             color: $black;
             width: 100%;
             font-weight: 500;
-
         }
     }
 }

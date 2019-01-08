@@ -59,3 +59,12 @@
 [data-parallax]{
     position: relative;
 }
+
+.flexrow {
+    display: flex;
+    flex-direction: column;
+
+    @include mq(sm) {
+        flex-direction: row;
+    }
+}

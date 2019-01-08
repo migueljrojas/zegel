@@ -1,5 +1,7 @@
 extends _layouts/base
 
+include ./_modules/eg-modal/eg-modal
+
 block content
     main.home
         section.home__hero
@@ -7,14 +9,17 @@ block content
                 .home__hero__title
                     img.wow.fadeInLeftBig(src="/images/hero-title.png")
                 .home__hero__wrapper.wow.fadeInLeftBig(data-wow-delay=".3s")
-                    p.home__hero__text
-                        |cuéntanos las expectativas sobre tu futuro profesional y participa por una beca. invita a tus amigos a darle like y junta más votos.
+                    p.home__hero__text ¡participa por una beca!
+                    ul.home__hero__list
+                        li.home__hero__text ● cuentanos las expectativas de tu futuro profesional
+                        li.home__hero__text ● invita a tus amigos a darle like y junta más votos
+                    .home__hero__text
                         br
-                        span la historia con más likes será la ganadora.
+                        span Podrás ganar una de las 3 becas o 10 medias becas para el primer ciclo
             .home__hero__row.home__hero__row--bottom.wow.fadeInUpBig
                 p.home__hero__comment ¡tu futuro profesional puede ser una gran historia!
-            .home__hero__image.wow.fadeInRight
-                img(src="/images/girl.png")
+                .home__hero__image.wow.fadeInRight
+                    img(src="/images/girl.png")
         section#form.home__form
             .home__title.home__title--form.wow.fadeInUpBig
                 img(src="/images/form-title.png")
@@ -139,8 +144,8 @@ block content
             .home__title.home__title--historias.wow.fadeInUpBig
                 img(src="/images/conoce-title.png")
                 
-            .home__historias__wrapper                
-                .home__historias__container.wow.fadeInLeftBig
+            .home__historias__wrapper
+                .home__historias__container.wow.fadeInLeftBig(data-modal="open")
                     .home__historias__image
                         img(src="/images/person1.jpg")
                     .home__historias__content
@@ -149,7 +154,7 @@ block content
                             span.home__historias__counter 2
                             i.fa.fa-heart
                 
-                .home__historias__container.wow.fadeInLeftBig(data-wow-delay=".2s")
+                .home__historias__container.wow.fadeInLeftBig(data-wow-delay=".2s" data-modal="open")
                     .home__historias__image
                         img(src="/images/person2.jpg")
                     .home__historias__content
@@ -158,7 +163,7 @@ block content
                             span.home__historias__counter 2
                             i.fa.fa-heart
                 
-                .home__historias__container.wow.fadeInLeftBig(data-wow-delay=".4s")
+                .home__historias__container.wow.fadeInLeftBig(data-wow-delay=".4s" data-modal="open")
                     .home__historias__image
                         img(src="/images/person3.jpg")
                     .home__historias__content
@@ -167,7 +172,7 @@ block content
                             span.home__historias__counter 102
                             i.fa.fa-heart
                 
-                .home__historias__container.wow.fadeInLeftBig(data-wow-delay=".6s")
+                .home__historias__container.wow.fadeInLeftBig(data-wow-delay=".6s" data-modal="open")
                     .home__historias__image
                         img(src="/images/person4.jpg")
                     .home__historias__content
@@ -176,7 +181,7 @@ block content
                             span.home__historias__counter 2
                             i.fa.fa-heart
                 
-                .home__historias__container.wow.fadeInLeftBig.-hidden-xs
+                .home__historias__container.wow.fadeInLeftBig.-hidden-xs(data-modal="open")
                     .home__historias__image
                         img(src="/images/person1.jpg")
                     .home__historias__content
@@ -185,7 +190,7 @@ block content
                             span.home__historias__counter 2
                             i.fa.fa-heart
                 
-                .home__historias__container.wow.fadeInLeftBig.-hidden-xs(data-wow-delay=".2s")
+                .home__historias__container.wow.fadeInLeftBig.-hidden-xs(data-wow-delay=".2s" data-modal="open")
                     .home__historias__image
                         img(src="/images/person2.jpg")
                     .home__historias__content
@@ -194,7 +199,7 @@ block content
                             span.home__historias__counter 2
                             i.fa.fa-heart
                 
-                .home__historias__container.wow.fadeInLeftBig.-hidden-xs(data-wow-delay=".4s")
+                .home__historias__container.wow.fadeInLeftBig.-hidden-xs(data-wow-delay=".4s" data-modal="open")
                     .home__historias__image
                         img(src="/images/person3.jpg")
                     .home__historias__content
@@ -203,7 +208,7 @@ block content
                             span.home__historias__counter 102
                             i.fa.fa-heart
                 
-                .home__historias__container.wow.fadeInLeftBig.-hidden-xs(data-wow-delay=".6s")
+                .home__historias__container.wow.fadeInLeftBig.-hidden-xs(data-wow-delay=".6s" data-modal="open")
                     .home__historias__image
                         img(src="/images/person4.jpg")
                     .home__historias__content
@@ -212,7 +217,7 @@ block content
                             span.home__historias__counter 2
                             i.fa.fa-heart
                 
-                .home__historias__container.wow.fadeInLeftBig.-hidden-xs
+                .home__historias__container.wow.fadeInLeftBig.-hidden-xs(data-modal="open")
                     .home__historias__image
                         img(src="/images/person1.jpg")
                     .home__historias__content
@@ -221,7 +226,7 @@ block content
                             span.home__historias__counter 2
                             i.fa.fa-heart
                 
-                .home__historias__container.wow.fadeInLeftBig.-hidden-xs(data-wow-delay=".2s")
+                .home__historias__container.wow.fadeInLeftBig.-hidden-xs(data-wow-delay=".2s" data-modal="open")
                     .home__historias__image
                         img(src="/images/person2.jpg")
                     .home__historias__content
@@ -230,7 +235,7 @@ block content
                             span.home__historias__counter 2
                             i.fa.fa-heart
                 
-                .home__historias__container.wow.fadeInLeftBig.-hidden-xs(data-wow-delay=".4s")
+                .home__historias__container.wow.fadeInLeftBig.-hidden-xs(data-wow-delay=".4s" data-modal="open")
                     .home__historias__image
                         img(src="/images/person3.jpg")
                     .home__historias__content
@@ -239,7 +244,7 @@ block content
                             span.home__historias__counter 102
                             i.fa.fa-heart
                 
-                .home__historias__container.wow.fadeInLeftBig.-hidden-xs(data-wow-delay=".6s")
+                .home__historias__container.wow.fadeInLeftBig.-hidden-xs(data-wow-delay=".6s" data-modal="open")
                     .home__historias__image
                         img(src="/images/person4.jpg")
                     .home__historias__content
@@ -249,7 +254,6 @@ block content
                             i.fa.fa-heart
             
             button.home__historias__more-button ver más
-        
         section#premios.home__premios
             .home__title.home__title--premios
                 img(src="/images/premios-title.png")
@@ -264,3 +268,32 @@ block content
                 p *debe haber terminado quinto de media
                 p presentar ficha de matrícula firmada con las condiciones
                 p debe mantener una nota promedio de 15 para mantener la beca
+        
+        +eg-modal
+            .home__eg-modal__wrapper#votar
+                .container
+                    .row.flexrow
+                        .col-xs-24.col-sm-12.home__eg-modal__group--left
+                            .home__eg-modal__group.home__eg-modal__group--image
+                                .home__eg-modal__image
+                                    img(src="/images/person1.jpg")
+                                .home__eg-modal__counter
+                                    span.home__eg-modal__text 2
+                                    i.fa.fa-heart
+                        .col-xs-24.col-sm-12.home__eg-modal__group--right
+                            .home__eg-modal__group.home__eg-modal__group--right
+                                h3.home__eg-modal__name juan becerra
+                                p.home__eg-modal__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    .row
+                        .col-xs-24.col-sm-offset-12
+                            .home__eg-modal__vote-button
+                                button votar
+            .home__eg-modal__wrapper.home__eg-modal__wrapper--terminos#terminos
+                .container
+                    .row
+                        .col-xs-24
+                            .home__eg-modal__content
+                                h3.home__eg-modal__name términos y condiciones
+                                p.home__eg-modal__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                p.home__eg-modal__text Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                
